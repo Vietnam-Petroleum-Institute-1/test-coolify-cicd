@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+api_key = os.environ.get('API_KEY')
 
 app = FastAPI()
 
@@ -8,4 +9,4 @@ async def hello_world():
     
 @app.get("/hello")
 async def hello():
-    return {"message": "Hi, this is cicd"}
+    return {"message": "Hi, this is cicd" + api_key}
