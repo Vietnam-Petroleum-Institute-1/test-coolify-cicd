@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+MY_VARI = $API_KEY
 
 app = FastAPI()
 
@@ -8,4 +9,4 @@ async def hello_world():
 
 @app.get("/hello")
 async def hello():
-    return {"message": "Hi, this is cicd"}
+    return {"message": "Hi, this is cicd" + MY_VARI}
