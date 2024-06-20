@@ -1,7 +1,10 @@
 from fastapi import FastAPI
-api_key = os.environ.get('API_KEY')
+import os
 
 app = FastAPI()
+
+
+api_key = os.environ.get('API_KEY')
 
 @app.get("/helloworld")
 async def hello_world():
