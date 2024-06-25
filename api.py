@@ -12,4 +12,4 @@ async def hello_world():
     
 @app.get("/hello")
 async def hello():
-    return {"message": "Hi, this is cicd, and api key is: " + api_key}
+    return {"message": "Hi, this is cicd, and api key is + edited: " + api_key}
