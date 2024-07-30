@@ -12,8 +12,8 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of your application
-COPY api.py .
+# Copy the FastAPI app code into the container
+COPY . .
 
 # Expose the port Uvicorn will run on
 EXPOSE 8001
