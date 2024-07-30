@@ -28,9 +28,6 @@ async def hello():
 @app.get("/xinchao")
 async def hello_world():
     return {"message": "xinchao"}
-    
-# Initialize the FastAPI app
-app = FastAPI()
 
 # Define the request body for predictions
 class PredictRequest(BaseModel):
@@ -158,4 +155,4 @@ async def train(file: UploadFile = File(...), feature_cols: str = Form(...)):
 # Run the app
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8001)
