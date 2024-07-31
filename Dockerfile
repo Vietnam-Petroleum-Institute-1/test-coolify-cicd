@@ -16,7 +16,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose the port Uvicorn will run on
-EXPOSE 8001
+EXPOSE 8004
 
 # Command to run the application
-CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8001"]
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8004"]
