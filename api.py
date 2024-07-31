@@ -15,6 +15,14 @@ import io
 # Initialize the FastAPI app
 app = FastAPI()
 
+@app.get("/helloworld")
+async def hello_world():
+    return {"message": "Hello World"}
+    
+@app.get("/xinchao")
+async def hello_world():
+    return {"message": "Xin chào thế giới"}
+
 # Define the request body for predictions
 class PredictRequest(BaseModel):
     DEPTH: float
