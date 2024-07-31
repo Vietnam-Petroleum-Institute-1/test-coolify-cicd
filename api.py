@@ -15,7 +15,7 @@ import io
 # Initialize the FastAPI app
 app = FastAPI()
 
-@app.get("/helloworld")
+@app.get("/hello")
 async def hello_world():
     return {"message": "Hello World"}
     
