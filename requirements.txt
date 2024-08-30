@@ -1,0 +1,17 @@
+
+fastapi
+uvicorn
+joblib
+numpy
+pydantic
+pandas
+imodels==1.4.0
+openpyxl
+azure-functions
+asyncpg
+fastapi
+python-multipart
+bz2file==0.98
+pydantic
+statsmodels
+pyod==1.0.9
